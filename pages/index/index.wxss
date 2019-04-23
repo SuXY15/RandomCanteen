@@ -1,0 +1,94 @@
+/**index.wxss**/
+.container-result{
+  font-size: 1.2em;
+}
+
+.container-button{
+  margin: 50rpx 0;
+}
+
+.button{
+  font-size: 42rpx;
+  line-height: 2.4;
+  width: 600rpx;
+}
+
+.button-start{
+  background: #0071bc;
+  color: #fff;
+  box-shadow: 1px 1px #4cbded;
+}
+
+.button-start-hover {
+  background-color: #4cbded;
+}
+
+.button-reset{
+  margin-top: 30rpx;
+  background: #d85218;
+  color: #fff;
+  box-shadow: 1px 1px #a1132e;
+}
+
+.button-reset-hover {
+  background-color: #a1132e;
+}
+
+.picker-place{
+  border: 1rpx solid rgb(145, 173, 112);
+  border-radius: 10rpx;
+  box-shadow: 1px 1px #7ebe15;
+  font-size: 36rpx;
+  line-height: 2;
+  text-align: center;
+  width: 600rpx;
+}
+
+.header-canteen{
+  margin: 50rpx 0 20rpx;
+  padding: 10rpx 20rpx 0;
+  font-weight: 700;
+  border-top: 3rpx solid #7d2e8d;
+  width: 100%;
+  text-align: center;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+}
+
+.canteen-list-text{
+  display: inline-block;
+  width: 200rpx;
+  margin: 0rpx 20rpx 0rpx;
+  flex-grow: 1;
+}
+
+.prob-text{
+  display: inline-block;
+  width: 480rpx;
+  margin-right: 40rpx;
+}
+
+.list-canteen{
+  font-size: 40rpx;
+  width: 100%;
+  margin: 0rpx 40rpx 0rpx;
+  height: 80rpx;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.item-canteen{
+  display: inline-block;
+  width: 200rpx;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.slider-prob{
+  display: inline-block;
+  width: 480rpx;
+  margin-right: 120rpx;
+}
+

@@ -1,0 +1,36 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 选择结果 -->
+  <view class="container-result" wx:if="{{selectedCanteen}}">
+    <text class="text-result">{{selectedCanteen.name}}</text>
+  </view>
+  
+  <!-- 按钮 -->
+  <view class="container-button">
+    <button class="button button-start" hover-class="button-start-hover" bindtap="onStartSelect">随机选择</button>
+    <button class="button button-reset" hover-class="button-reset-hover" bindtap="onReset">重置参数</button>
+  </view>
+  
+  <!-- 区域选择 -->
+  <picker class="picker-place" bindchange="onPlaceChange" bindtap="onPlaceSelect" value="index" range="{{placeList}}">
+    <view class="picker-selected">
+      当前区域：{{placeSelected}}
+    </view>
+  </picker>
+
+  <!-- 食堂列表 -->
+  <view class="header-canteen">
+    <text class="canteen-list-text">食堂列表</text>
+    <text class="prob-text">概率</text>
+  </view>
+
+  <!-- 食堂概率 -->
+  <slider-group class="slider-group-canteen" bindchange="checkboxChangeCanteen">
+    <view class="list-canteen" wx:for="{{canteens}}" wx:key="name">
+      <text class="item-canteen" title="{{item.info}}">{{item.name}}</text>
+      <view class="slider-prob">
+        <slider bindchange="onProbChange" step="0.1" value="{{item.prob}}" min="0" max="5" data-canteen="{{item.name}}" show-value />
+      </view>
+    </view>
+  </slider-group>
+</view>
